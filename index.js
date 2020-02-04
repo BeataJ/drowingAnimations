@@ -11,3 +11,7 @@ class Timer {
     console.log('Time to start the timer!');
   }
 }
+
+const durationInput = document.querySelector('#duration');
+const startButton = document.querySelector('#start');
+const pouseButton = document.querySelector('#pouse');
