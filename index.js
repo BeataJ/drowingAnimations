@@ -5,12 +5,16 @@ class Timer {
     this.pouseButton = pouseButton;
 
     this.startButton.addEventListener('click', this.start);
+    this.pouseButton.addEventListener('click', this.pouse);
   }
 
   start = () => {
     this.tick();
-    const timer = setInterval(this.tick, 1000);
-    clearInterval(timer);
+    this.interval = setInterval(this.tick, 1000);
+  };
+
+  pouse = () => {
+    clearInterval(this.interval);
   };
 
   tick = () => {
