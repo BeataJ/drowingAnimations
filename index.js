@@ -1,6 +1,6 @@
 class Timer {
-  constructor(duractionInput, startButton, pouseButton) {
-    this.duractionInput = duractionInput;
+  constructor(durationInput, startButton, pouseButton) {
+    this.durationInput = durationInput;
     this.startButton = startButton;
     this.pouseButton = pouseButton;
 
