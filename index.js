@@ -17,3 +17,4 @@ const startButton = document.querySelector('#start');
 const pouseButton = document.querySelector('#pouse');
 
 const timer = new Timer(durationInput, startButton, pouseButton);
+timer.start();
