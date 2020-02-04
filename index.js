@@ -8,7 +8,11 @@ class Timer {
   }
 
   start = () => {
-    console.log(this);
+    setInterval(this.tick, 1000);
+  };
+
+  tick = () => {
+    console.log('tick');
   };
 }
 
@@ -17,4 +21,3 @@ const startButton = document.querySelector('#start');
 const pouseButton = document.querySelector('#pouse');
 
 const timer = new Timer(durationInput, startButton, pouseButton);
-timer.start();
