@@ -28,6 +28,9 @@ class Timer {
   tick = () => {
     if (this.timeRemaining <= 0) {
       this.pouse();
+      if (this.onComplete) {
+        this.onComplete();
+      }
     } else {
       this.timeRemaining = this.timeRemaining - 1;
       if (this.onTick) {
