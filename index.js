@@ -3,6 +3,8 @@ const startButton = document.querySelector('#start');
 const pouseButton = document.querySelector('#pouse');
 const circle = document.querySelector('circle');
 
+const perimeter = circle.getAttribute('r') * 2 * Math.PI;
+
 const timer = new Timer(durationInput, startButton, pouseButton, {
   onStart() {
     console.log('Timer started');
